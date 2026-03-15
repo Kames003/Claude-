@@ -1,6 +1,6 @@
 # Memory & Persistence
 
-Ako Claude Code uklada a pouziva informacie medzi sessions.
+Ako Claude Code ukladá a používa informácie medzi sessions, vrátane integrácie s hooks.
 
 ---
 
@@ -444,8 +444,61 @@ znovu otvor a pokracuj kde si skoncil.
 
 ---
 
-## Dalej
+## Memory Hooks
 
-**Pokracuj na Tier 4: Advanced**
+### Automatické ukladanie do pamäte
 
-[AI Tool Implementation](../04-advanced/13-ai-tools.md) - Vytvaranie vlastnych AI nastrojov
+```json
+// ~/.claude/settings.json
+{
+  "hooks": {
+    "post-response": [
+      {
+        "command": "echo \"$(date): Session note\" >> ~/.claude/session-log.txt"
+      }
+    ]
+  }
+}
+```
+
+### Hook pre sledovanie zmien
+
+```json
+{
+  "hooks": {
+    "post-tool-call": [
+      {
+        "tool": "Edit",
+        "command": "echo \"Modified: $FILE_PATH at $(date)\" >> ~/.claude/changes.log"
+      }
+    ]
+  }
+}
+```
+
+### Integrácia s /remember
+
+```bash
+# Po dôležitom rozhodnutí
+/remember Rozhodli sme sa použiť Zustand namiesto Redux
+
+# Hook môže automaticky logovať
+{
+  "hooks": {
+    "post-response": [
+      {
+        "pattern": "/remember*",
+        "command": "echo \"Memory saved: $(date)\" >> ~/.claude/memory-audit.log"
+      }
+    ]
+  }
+}
+```
+
+---
+
+## Ďalej
+
+**Pokračuj na Tier 4: Advanced**
+
+[AI Tool Implementation](../04-advanced/13-ai-tools.md) - Vytváranie vlastných AI nástrojov

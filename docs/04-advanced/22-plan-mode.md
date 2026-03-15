@@ -4,6 +4,15 @@ Kritická funkcia pre plánovanie komplexných zmien pred implementáciou.
 
 ---
 
+## Predpoklady
+
+Pred použitím Plan Mode by ste mali mať:
+- Skúsenosti s Claude Code základmi ([Foundation](../01-foundation/01-uvod.md))
+- Pochopenie Tool Use ([Tool Use](../02-core/06-tool-use.md))
+- Znalosť Hooks & Automation ([Hooks](18-hooks-automation.md))
+
+---
+
 ## Čo je Plan Mode?
 
 Plan Mode je špeciálny režim Claude Code kde:
@@ -12,19 +21,47 @@ Plan Mode je špeciálny režim Claude Code kde:
 - Vytvára detailný plán implementácie
 - Používateľ schvaľuje plán pred vykonaním
 
+```
+┌─────────────────────────────────────────────────────────────┐
+│  PLAN MODE - Read-Only Analysis                             │
+│                                                             │
+│  ✓ Read, Glob, Grep, WebSearch, WebFetch                   │
+│  ✗ Write, Edit, Bash (ZAKÁZANÉ)                            │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## Token Consumption
+
+**Dôležité:** Plan Mode je náročnejší na tokeny:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  Plan Mode vs Normal Mode - Token Usage                     │
+│                                                             │
+│  Normal Mode:  ████░░░░░░  ~1x baseline                     │
+│  Plan Mode:    ████████████████████████████  ~7x baseline   │
+│                                                             │
+│  Dôvod: Rozsiahla analýza + plán + iterácie                │
+└─────────────────────────────────────────────────────────────┘
+```
+
+Preto používajte Plan Mode strategicky pre komplexné úlohy.
+
 ---
 
 ## Kedy použiť Plan Mode?
 
-| Situácia | Použiť Plan Mode? |
-|----------|-------------------|
-| Nová feature s viacerými súbormi | Áno |
-| Veľký refaktoring | Áno |
-| Architektonické zmeny | Áno |
-| Nejasné požiadavky | Áno |
-| Jednoduchý bug fix | Nie |
-| Pridanie importu | Nie |
-| Formátovanie kódu | Nie |
+| Situácia | Použiť Plan Mode? | Dôvod |
+|----------|-------------------|-------|
+| Nová feature s viacerými súbormi | Áno | Potrebná koordinácia |
+| Veľký refaktoring | Áno | Riziko regresií |
+| Architektonické zmeny | Áno | Dlhodobý dopad |
+| Nejasné požiadavky | Áno | Validácia pred implementáciou |
+| Jednoduchý bug fix | Nie | Overhead sa neoplatí |
+| Pridanie importu | Nie | Triviálna zmena |
+| Formátovanie kódu | Nie | Automatizovateľné |
 
 ---
 
@@ -248,6 +285,52 @@ každú schválim osobitne.
 
 ---
 
+## Integrácia s Hooks
+
+Plan Mode sa dá kombinovať s hooks pre automatizáciu:
+
+```json
+// ~/.claude/settings.json
+{
+  "hooks": {
+    "planApproved": {
+      "command": "echo 'Plan approved at $(date)' >> ~/.claude/plan-log.txt"
+    }
+  }
+}
+```
+
+---
+
+## UIGen Príklad
+
+### Plan Mode pre VFS Refaktoring
+
+```
+User: Použi plan mode a navrhni rozšírenie VirtualFileSystem
+o podporu symlinkov.
+
+Claude: Vstupujem do Plan Mode...
+
+[Analýza src/lib/file-system.ts]
+
+Plán:
+1. Pridať SymlinkNode typ do FileSystemNode union
+2. Implementovať createSymlink() metódu
+3. Upraviť readFile() pre sledovanie symlinkov
+4. Pridať resolveSymlink() helper
+5. Aktualizovať serializáciu pre DB
+6. Napísať testy pre symlink scenáre
+
+Riziká:
+- Cyklické symlinky
+- Serializácia/deserializácia komplexity
+
+Súhlasíš?
+```
+
+---
+
 ## Cvičenia
 
 ### Cvičenie 1: Basic Plan
@@ -271,10 +354,6 @@ pre state management v UIGen.
 
 ---
 
----
+## Ďalej
 
-## Dalej
-
-**Pokracuj na Tier 2: Core**
-
-[Struktura Skillov](../02-core/04-struktura-skillov.md) - Ako pisat a organizovat Skills
+[IDE Integrations](19-ide-integrations.md) - VS Code, JetBrains, Vim, Emacs integrácie
