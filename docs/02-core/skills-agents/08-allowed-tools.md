@@ -8,7 +8,7 @@ Konfigurácia a bezpečnostné aspekty allowed-tools v Skills.
 
 Pred čítaním tohto modulu by ste mali mať:
 - Pochopenie štruktúry Skills ([Štruktúra Skillov](01-struktura-skillov.md))
-- Znalosť Built-in Agents ([Built-in Agents](07-built-in-agents.md))
+- Znalosť Built-in Agents ([Built-in Agents](06-built-in-agents.md))
 
 ---
 
@@ -264,4 +264,4 @@ s najprísnejšími obmedzeniami.
 
 ## Ďalej
 
-[Troubleshooting](10-troubleshooting.md) - Riešenie problémov so skills a agents
+[Troubleshooting](09-troubleshooting.md) - Riešenie problémov so skills a agents

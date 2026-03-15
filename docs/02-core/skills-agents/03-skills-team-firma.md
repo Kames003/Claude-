@@ -202,4 +202,4 @@ Zabaľte vaše skills do pluginu s plugin.json.
 
 ## Ďalej
 
-[Skill Templates](05-skill-templates.md) - Hotové skills na použitie
+[Skill Templates](04-skill-templates.md) - Hotové skills na použitie

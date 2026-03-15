@@ -239,4 +239,4 @@ Pridaj budget limiting - zastav keď sa dosiahne limit.
 
 ## Ďalej
 
-[Multi-Agent Orchestration](13-multi-agent.md) - Koordinácia viacerých agentov
+[Multi-Agent Orchestration](12-multi-agent.md) - Koordinácia viacerých agentov

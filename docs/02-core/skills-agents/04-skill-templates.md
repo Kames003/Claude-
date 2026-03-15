@@ -332,4 +332,4 @@ Pre ďalšie skill šablóny a pokročilé príklady pozrite:
 
 ## Ďalej
 
-[Best Practices](06-best-practices.md) - Overené vzory a zlaté pravidlá
+[Best Practices](05-best-practices.md) - Overené vzory a zlaté pravidlá

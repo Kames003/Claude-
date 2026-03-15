@@ -8,7 +8,7 @@ Optimalizácia výkonu a nákladov pri práci so Skills a Agents.
 
 Pred čítaním tohto modulu by ste mali mať:
 - Pochopenie štruktúry Skills ([Štruktúra Skillov](01-struktura-skillov.md))
-- Znalosť allowed-tools ([Allowed Tools](09-allowed-tools.md))
+- Znalosť allowed-tools ([Allowed Tools](08-allowed-tools.md))
 
 ---
 
@@ -277,5 +277,5 @@ identifikujte optimalizačné príležitosti.
 
 ## Ďalej
 
-[Model Selection](12-model-selection.md) - Výber správneho modelu (Haiku vs Sonnet vs Opus)
+[Model Selection](11-model-selection.md) - Výber správneho modelu (Haiku vs Sonnet vs Opus)
 

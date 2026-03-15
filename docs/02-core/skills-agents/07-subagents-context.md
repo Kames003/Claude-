@@ -307,4 +307,4 @@ základe analýzy.
 
 ## Ďalej
 
-[Allowed Tools](09-allowed-tools.md) - Bezpečnostná konfigurácia nástrojov
+[Allowed Tools](08-allowed-tools.md) - Bezpečnostná konfigurácia nástrojov

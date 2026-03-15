@@ -24,33 +24,33 @@ Technická dokumentácia pre interné AI workshopy. Materiály na pomoc kolegom 
 ### Tier 2: Core (Jadro) - Skills & Agents
 *Komplexný prehľad Skills a Agents systému*
 
-#### Skills
+#### Skills (Moduly 06-09)
 
 | # | Modul | Popis | Predpoklady |
 |---|-------|-------|-------------|
 | 06 | [Štruktúra Skillov](02-core/skills-agents/01-struktura-skillov.md) | Organizácia a písanie SKILL.md | Foundation |
 | 07 | [Priorita a Distribúcia](02-core/skills-agents/02-priorita.md) | Hierarchia skills | Modul 06 |
-| 08 | [Skills v Tíme a Firme](02-core/skills-agents/03-skills-team-firma.md) | Enterprise skills, pluginy | Modul 06-07 |
-| 09 | [Skill Templates](02-core/skills-agents/05-skill-templates.md) | Hotové skills na použitie | Modul 06-08 |
-| 10 | [Best Practices](02-core/skills-agents/06-best-practices.md) | Overené vzory a zlaté pravidlá | Modul 06-09 |
+| 08 | [Skills v Tíme a Firme](02-core/skills-agents/03-skills-team-firma.md) | Enterprise skills, pluginy, bezpečnosť | Modul 06-07 |
+| 09 | [Skill Templates](02-core/skills-agents/04-skill-templates.md) | Hotové skills na použitie | Modul 06-08 |
 
-#### Agents
-
-| # | Modul | Popis | Predpoklady |
-|---|-------|-------|-------------|
-| 11 | [Built-in Agents](02-core/skills-agents/07-built-in-agents.md) | Explorer, Plan, Verify agenti | Modul 10 |
-| 12 | [Subagents a Kontext](02-core/skills-agents/08-subagents-context.md) | Delegovanie úloh, formatted fields | Modul 11 |
-| 13 | [Model Selection](02-core/skills-agents/12-model-selection.md) | Haiku vs Sonnet vs Opus, kedy ktorý | Modul 11-12 |
-| 14 | [Multi-Agent Orchestration](02-core/skills-agents/13-multi-agent.md) | Koordinácia viacerých agentov | Modul 12-13 |
-| 15 | [Debugging Agents](02-core/skills-agents/14-debugging.md) | Diagnostika a riešenie problémov agentov | Modul 14 |
-
-#### Konfigurácia & Optimalizácia
+#### Best Practices (Modul 10)
 
 | # | Modul | Popis | Predpoklady |
 |---|-------|-------|-------------|
-| 16 | [Allowed Tools](02-core/skills-agents/09-allowed-tools.md) | Bezpečnostná konfigurácia nástrojov | Modul 06 |
-| 17 | [Troubleshooting](02-core/skills-agents/10-troubleshooting.md) | Riešenie problémov so skills | Modul 06-16 |
-| 18 | [Performance](02-core/skills-agents/11-performance.md) | Optimalizácia výkonu a nákladov | Modul 06-17 |
+| 10 | [Best Practices](02-core/skills-agents/05-best-practices.md) | Overené vzory a zlaté pravidlá | Modul 06-09 |
+
+#### Agents (Moduly 11-17)
+
+| # | Modul | Popis | Predpoklady |
+|---|-------|-------|-------------|
+| 11 | [Built-in Agents](02-core/skills-agents/06-built-in-agents.md) | Explorer, Plan, Verify agenti | Modul 10 |
+| 12 | [Subagents a Kontext](02-core/skills-agents/07-subagents-context.md) | Delegovanie úloh, formatted fields | Modul 11 |
+| 13 | [Allowed Tools](02-core/skills-agents/08-allowed-tools.md) | Bezpečnostná konfigurácia nástrojov | Modul 11 |
+| 14 | [Troubleshooting](02-core/skills-agents/09-troubleshooting.md) | Riešenie problémov, explicitné načítanie | Modul 11-13 |
+| 15 | [Performance](02-core/skills-agents/10-performance.md) | Optimalizácia výkonu a nákladov | Modul 11-14 |
+| 16 | [Model Selection](02-core/skills-agents/11-model-selection.md) | Haiku vs Sonnet vs Opus | Modul 15 |
+| 17 | [Multi-Agent Orchestration](02-core/skills-agents/12-multi-agent.md) | Koordinácia viacerých agentov | Modul 16 |
+| 18 | [Debugging Agents](02-core/skills-agents/13-debugging.md) | Diagnostika a riešenie problémov | Modul 17 |
 
 ---
 
@@ -63,7 +63,7 @@ Technická dokumentácia pre interné AI workshopy. Materiály na pomoc kolegom 
 | 20 | [TDD a Testing](03-intermediate/09-tdd-testing.md) | Test-driven development s Claude | Modul 19 |
 | 21 | [Context a State](03-intermediate/10-context-state.md) | React state management s Claude | Modul 19-20 |
 | 22 | [Server Actions a API](03-intermediate/11-server-actions-api.md) | Backend s Next.js | Modul 19-21 |
-| 23 | [Memory & Persistence](03-intermediate/13-memory-persistence.md) | CLAUDE.md, sessions, dlhodobá pamäť, hooks | Modul 19 |
+| 23 | [Memory & Persistence](03-intermediate/13-memory-persistence.md) | CLAUDE.md, sessions, hooks | Modul 19 |
 | 24 | [Sessions](03-intermediate/14-sessions.md) | Auto-save, export, resume | Modul 23 |
 | 25 | [Git Integration](02-core/09-git-integration.md) | Git workflow s Claude Code | Foundation |
 
@@ -107,6 +107,7 @@ Technická dokumentácia pre interné AI workshopy. Materiály na pomoc kolegom 
 | [D: Extended Troubleshooting](appendices/d-troubleshooting-extended.md) | Pokročilé riešenie problémov | - |
 | [E: Commands & CLI Reference](appendices/e-commands-reference.md) | Kompletná CLI referencia | Foundation 03 |
 | [F: Settings Configuration](appendices/f-settings-config.md) | Všetky nastavenia a konfigurácia | - |
+| [G: Tool Reference](appendices/g-tool-reference.md) | Detailná referencia všetkých nástrojov | - |
 
 ---
 
@@ -143,6 +144,10 @@ claude              # Interaktívny mód
 claude "prompt"     # Jednorazový prompt
 claude /init        # Vytvor CLAUDE.md
 
+# Skills
+/skill list         # Zoznam skills
+/skill load <name>  # Načítaj skill
+
 # Plan Mode
 /plan               # Vstup do plan mode
 /exit-plan          # Opusti plan mode
@@ -166,24 +171,22 @@ claude --resume     # Pokračuj v session
 |---------|-------|-------|
 | CLAUDE.md | Projektový kontext | 01-02 |
 | CLI Commands | Slash commands, flags | 03 |
-| Skills | Modulárne znalostné balíčky | 04, 06-10 |
+| Skills | Modulárne znalostné balíčky | 04, 06-09 |
 | Priorita | Enterprise > Personal > Project > Plugins | 07 |
 | Built-in Agents | Explorer, Plan, Verify | 11 |
-| Subagents | Delegovanie úloh | 12 |
-| Model Selection | Haiku vs Sonnet vs Opus | 13 |
-| Multi-Agent | Koordinácia agentov | 14 |
-| Debugging Agents | Diagnostika problémov | 15 |
-| Allowed Tools | Bezpečnostná konfigurácia | 16 |
+| Subagents | Delegovanie úloh, formatted fields | 12 |
+| Allowed Tools | Bezpečnostná konfigurácia | 13 |
+| Model Selection | Haiku vs Sonnet vs Opus | 16 |
+| Multi-Agent | Koordinácia agentov | 17 |
 | Plan Mode | Plánovanie komplexných zmien | 32 |
 | Hooks | Event-driven automatizácia | 31 |
 | Sessions | Auto-save, export, resume | 24 |
-| MCP | Model Context Protocol | 30 |
 
 ---
 
 ## Core Learning Path: Skills & Agents
 
-Pre úplné pochopenie Skills & Agents systému:
+Pre úplné pochopenie Skills & Agents systému (13 modulov):
 
 ```
 SKILLS
@@ -194,43 +197,40 @@ SKILLS
 │ 02-priorita.md                      │ → Hierarchia a distribúcia
 │         │                           │
 │         ▼                           │
-│ 03-skills-team-firma.md             │ → Enterprise a pluginy
+│ 03-skills-team-firma.md             │ → Enterprise, Plugins, Bezpečnosť
 │         │                           │
 │         ▼                           │
-│ 05-skill-templates.md               │ → Hotové šablóny
+│ 04-skill-templates.md               │ → Hotové šablóny
 │         │                           │
 │         ▼                           │
-│ 06-best-practices.md                │ → Overené vzory
+│ 05-best-practices.md                │ → Overené vzory
 └─────────────────────────────────────┘
                 │
                 ▼
 AGENTS
 ┌─────────────────────────────────────┐
-│ 07-built-in-agents.md               │ → Explorer, Plan, Verify
+│ 06-built-in-agents.md               │ → Explorer, Plan, Verify
 │         │                           │
 │         ▼                           │
-│ 08-subagents-context.md             │ → Task tool, delegovanie
+│ 07-subagents-context.md             │ → Task tool, formatted fields
 │         │                           │
 │         ▼                           │
-│ 12-model-selection.md               │ → Výber správneho modelu
+│ 08-allowed-tools.md                 │ → Bezpečnostná konfigurácia
 │         │                           │
 │         ▼                           │
-│ 13-multi-agent.md                   │ → Orchestrácia agentov
+│ 09-troubleshooting.md               │ → Riešenie problémov
 │         │                           │
 │         ▼                           │
-│ 14-debugging.md                     │ → Diagnostika problémov
-└─────────────────────────────────────┘
-                │
-                ▼
-KONFIGURÁCIA
-┌─────────────────────────────────────┐
-│ 09-allowed-tools.md                 │ → Bezpečnostná konfigurácia
+│ 10-performance.md                   │ → Optimalizácia nákladov
 │         │                           │
 │         ▼                           │
-│ 10-troubleshooting.md               │ → Riešenie problémov
+│ 11-model-selection.md               │ → Výber správneho modelu
 │         │                           │
 │         ▼                           │
-│ 11-performance.md                   │ → Optimalizácia nákladov
+│ 12-multi-agent.md                   │ → Orchestrácia agentov
+│         │                           │
+│         ▼                           │
+│ 13-debugging.md                     │ → Diagnostika problémov
 └─────────────────────────────────────┘
 ```
 
@@ -245,25 +245,6 @@ Dokumentácia používa UIGen ako praktický príklad:
 - **Anthropic Claude** AI integrácia s tool use
 - **Virtual File System** pre in-memory operácie
 - **Vitest** + React Testing Library
-
-### Komplexnosť podľa Tier
-
-```
-FOUNDATION:   button.tsx, MessageInput.tsx
-              Jednoduché komponenty (~110 riadkov)
-
-CORE:         skills/, contexts/, auth.ts
-              Skills, Agents, state management (~800 riadkov)
-
-INTERMEDIATE: testy, hooks
-              Testing patterns (~500 riadkov)
-
-ADVANCED:     api/chat, tools/, transformer
-              AI integrácia (~500 riadkov)
-
-MASTERY:      file-system.ts + komplexné testy
-              VFS implementácia (~1200 riadkov)
-```
 
 ---
 
@@ -280,10 +261,8 @@ MASTERY:      file-system.ts + komplexné testy
 | Metrika | Hodnota |
 |---------|---------|
 | Počet modulov | 37 |
-| Počet príloh | 6 |
-| Počet príkladov | 300+ |
-| Počet cvičení | 90+ |
-| UIGen referencie | 55% modulov |
+| Počet príloh | 7 |
+| Core moduly | 13 (Skills & Agents) |
 
 ---
 

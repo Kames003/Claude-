@@ -8,7 +8,7 @@ Overené vzory a zlaté pravidlá pre prácu so Skills a Agents.
 
 Pred čítaním tohto modulu by ste mali mať:
 - Pochopenie štruktúry Skills ([Štruktúra Skillov](01-struktura-skillov.md))
-- Znalosť Skill Templates ([Skill Templates](05-skill-templates.md))
+- Znalosť Skill Templates ([Skill Templates](04-skill-templates.md))
 
 ---
 
@@ -298,4 +298,4 @@ refactor(skills): split large skill into modules
 
 ## Ďalej
 
-[Built-in Agents](07-built-in-agents.md) - Explorer, Plan, Verify agenti
+[Built-in Agents](06-built-in-agents.md) - Explorer, Plan, Verify agenti

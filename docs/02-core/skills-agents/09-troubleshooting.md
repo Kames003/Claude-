@@ -8,7 +8,7 @@ Riešenie bežných problémov so Skills a Agents.
 
 Pred čítaním tohto modulu by ste mali mať:
 - Pochopenie štruktúry Skills ([Štruktúra Skillov](01-struktura-skillov.md))
-- Znalosť Built-in Agents ([Built-in Agents](07-built-in-agents.md))
+- Znalosť Built-in Agents ([Built-in Agents](06-built-in-agents.md))
 
 ---
 
@@ -262,4 +262,4 @@ do štruktúry s references/.
 
 ## Ďalej
 
-[Performance](11-performance.md) - Optimalizácia výkonu a nákladov
+[Performance](10-performance.md) - Optimalizácia výkonu a nákladov

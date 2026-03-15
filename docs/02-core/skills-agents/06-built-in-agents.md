@@ -310,4 +310,4 @@ na kompletnú kontrolu.
 
 ## Ďalej
 
-[Subagents a Kontext](08-subagents-context.md) - Delegovanie úloh a formatted fields
+[Subagents a Kontext](07-subagents-context.md) - Delegovanie úloh a formatted fields

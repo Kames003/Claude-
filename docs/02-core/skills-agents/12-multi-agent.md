@@ -279,4 +279,4 @@ Implementuj agenta ktorý iteratívne vylepšuje kód na základe feedbacku.
 
 ## Ďalej
 
-[Debugging Agents](14-debugging.md) - Diagnostika a riešenie problémov
+[Debugging Agents](13-debugging.md) - Diagnostika a riešenie problémov
