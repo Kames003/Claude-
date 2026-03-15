@@ -302,6 +302,14 @@ ukonči a znovu načítaj pomocou claude --resume.
 
 ---
 
+## Rozšírená CLI Referencia
+
+Pre kompletný zoznam všetkých príkazov, flagov a pokročilých možností pozrite:
+
+**[Appendix E: Commands & CLI Reference](../appendices/e-commands-reference.md)** - Kompletná CLI referencia
+
+---
+
 ## Ďalej
 
 [Skills - Core Concept](04-skills-concept.md) - Modulárne znalostné balíčky

@@ -40,14 +40,17 @@ Technická dokumentácia pre interné AI workshopy. Materiály na pomoc kolegom 
 |---|-------|-------|-------------|
 | 11 | [Built-in Agents](02-core/skills-agents/07-built-in-agents.md) | Explorer, Plan, Verify agenti | Modul 10 |
 | 12 | [Subagents a Kontext](02-core/skills-agents/08-subagents-context.md) | Delegovanie úloh, formatted fields | Modul 11 |
+| 13 | [Model Selection](02-core/skills-agents/12-model-selection.md) | Haiku vs Sonnet vs Opus, kedy ktorý | Modul 11-12 |
+| 14 | [Multi-Agent Orchestration](02-core/skills-agents/13-multi-agent.md) | Koordinácia viacerých agentov | Modul 12-13 |
+| 15 | [Debugging Agents](02-core/skills-agents/14-debugging.md) | Diagnostika a riešenie problémov agentov | Modul 14 |
 
-#### Konfigurácia & Troubleshooting
+#### Konfigurácia & Optimalizácia
 
 | # | Modul | Popis | Predpoklady |
 |---|-------|-------|-------------|
-| 13 | [Allowed Tools](02-core/skills-agents/09-allowed-tools.md) | Bezpečnostná konfigurácia nástrojov | Modul 06 |
-| 14 | [Troubleshooting](02-core/skills-agents/10-troubleshooting.md) | Riešenie problémov so skills a agents | Modul 06-13 |
-| 15 | [Performance](02-core/skills-agents/11-performance.md) | Optimalizácia výkonu a nákladov | Modul 06-14 |
+| 16 | [Allowed Tools](02-core/skills-agents/09-allowed-tools.md) | Bezpečnostná konfigurácia nástrojov | Modul 06 |
+| 17 | [Troubleshooting](02-core/skills-agents/10-troubleshooting.md) | Riešenie problémov so skills | Modul 06-16 |
+| 18 | [Performance](02-core/skills-agents/11-performance.md) | Optimalizácia výkonu a nákladov | Modul 06-17 |
 
 ---
 
@@ -56,14 +59,13 @@ Technická dokumentácia pre interné AI workshopy. Materiály na pomoc kolegom 
 
 | # | Modul | Popis | Predpoklady |
 |---|-------|-------|-------------|
-| 16 | [Praktické tipy](03-intermediate/08-prakticke-tipy.md) | Best practices a overené vzory | Core |
-| 17 | [TDD a Testing](03-intermediate/09-tdd-testing.md) | Test-driven development s Claude | Modul 16 |
-| 18 | [Context a State](03-intermediate/10-context-state.md) | React state management s Claude | Modul 16-17 |
-| 19 | [Server Actions a API](03-intermediate/11-server-actions-api.md) | Backend s Next.js | Modul 16-18 |
-| 20 | [Model Selection](03-intermediate/12-model-selection.md) | Sonnet vs Opus, optimalizácia | Core |
-| 21 | [Memory & Persistence](03-intermediate/13-memory-persistence.md) | CLAUDE.md, sessions, dlhodobá pamäť, hooks | Modul 16 |
-| 22 | [Sessions](03-intermediate/14-sessions.md) | Auto-save, export, resume | Modul 21 |
-| 23 | [Git Integration](02-core/09-git-integration.md) | Git workflow s Claude Code | Foundation |
+| 19 | [Praktické tipy](03-intermediate/08-prakticke-tipy.md) | Best practices a overené vzory | Core |
+| 20 | [TDD a Testing](03-intermediate/09-tdd-testing.md) | Test-driven development s Claude | Modul 19 |
+| 21 | [Context a State](03-intermediate/10-context-state.md) | React state management s Claude | Modul 19-20 |
+| 22 | [Server Actions a API](03-intermediate/11-server-actions-api.md) | Backend s Next.js | Modul 19-21 |
+| 23 | [Memory & Persistence](03-intermediate/13-memory-persistence.md) | CLAUDE.md, sessions, dlhodobá pamäť, hooks | Modul 19 |
+| 24 | [Sessions](03-intermediate/14-sessions.md) | Auto-save, export, resume | Modul 23 |
+| 25 | [Git Integration](02-core/09-git-integration.md) | Git workflow s Claude Code | Foundation |
 
 ---
 
@@ -72,16 +74,16 @@ Technická dokumentácia pre interné AI workshopy. Materiály na pomoc kolegom 
 
 | # | Modul | Popis | Predpoklady |
 |---|-------|-------|-------------|
-| 24 | [AI Tool Implementation](04-advanced/13-ai-tools.md) | Vytváranie vlastných AI nástrojov | Intermediate |
-| 25 | [Streaming](04-advanced/14-streaming.md) | Real-time AI odpovede | Modul 24 |
-| 26 | [Code Transformations](04-advanced/15-transformations.md) | JSX/Babel transformácie | Modul 24-25 |
-| 27 | [Virtual File System](04-advanced/16-virtual-filesystem.md) | In-memory súborový systém | Modul 24-26 |
-| 28 | [MCP Servers](04-advanced/17-mcp-servers.md) | Model Context Protocol integrácia | Intermediate |
-| 29 | [Hooks & Automation](04-advanced/18-hooks-automation.md) | Event-driven automatizácia | Core |
-| 30 | [Plan Mode](04-advanced/22-plan-mode.md) | Plánovanie komplexných zmien | Modul 29 |
-| 31 | [IDE Integrations](04-advanced/19-ide-integrations.md) | VS Code, JetBrains, Vim, Emacs | Foundation |
-| 32 | [Working Trees](04-advanced/20-working-trees.md) | Git worktrees pre paralelný vývoj | Modul 23 |
-| 33 | [Headless Mode](04-advanced/21-headless-mode.md) | CI/CD a automatizácia | Core |
+| 26 | [AI Tool Implementation](04-advanced/13-ai-tools.md) | Vytváranie vlastných AI nástrojov | Intermediate |
+| 27 | [Streaming](04-advanced/14-streaming.md) | Real-time AI odpovede | Modul 26 |
+| 28 | [Code Transformations](04-advanced/15-transformations.md) | JSX/Babel transformácie | Modul 26-27 |
+| 29 | [Virtual File System](04-advanced/16-virtual-filesystem.md) | In-memory súborový systém | Modul 26-28 |
+| 30 | [MCP Servers](04-advanced/17-mcp-servers.md) | Model Context Protocol integrácia | Intermediate |
+| 31 | [Hooks & Automation](04-advanced/18-hooks-automation.md) | Event-driven automatizácia | Core |
+| 32 | [Plan Mode](04-advanced/22-plan-mode.md) | Plánovanie komplexných zmien | Modul 31 |
+| 33 | [IDE Integrations](04-advanced/19-ide-integrations.md) | VS Code, JetBrains, Vim, Emacs | Foundation |
+| 34 | [Working Trees](04-advanced/20-working-trees.md) | Git worktrees pre paralelný vývoj | Modul 25 |
+| 35 | [Headless Mode](04-advanced/21-headless-mode.md) | CI/CD a automatizácia | Core |
 
 ---
 
@@ -90,23 +92,21 @@ Technická dokumentácia pre interné AI workshopy. Materiály na pomoc kolegom 
 
 | # | Modul | Popis | Predpoklady |
 |---|-------|-------|-------------|
-| 34 | [Multi-Agent Orchestration](05-mastery/18-multi-agent.md) | Koordinácia viacerých agentov | Advanced |
-| 35 | [Security](05-mastery/20-security.md) | Bezpečnostné best practices | Advanced |
-| 36 | [Debugging Agentic Failures](05-mastery/21-debugging.md) | Diagnostika komplexných problémov | Modul 34-35 |
+| 36 | [Security](05-mastery/20-security.md) | Bezpečnostné best practices | Advanced |
 | 37 | [Enterprise Deployment](05-mastery/22-enterprise.md) | CI/CD, tímová spolupráca | Mastery |
 
 ---
 
 ### Appendices (Prílohy)
 
-| Príloha | Popis |
-|---------|-------|
-| [A: CLAUDE.md Templates](appendices/a-claude-md-templates.md) | Šablóny pre projekty |
-| [B: Skill Templates](appendices/b-skill-templates.md) | Hotové skills na použitie |
-| [C: UIGen Reference](appendices/c-uigen-reference.md) | Kompletná referencia projektu |
-| [D: Extended Troubleshooting](appendices/d-troubleshooting-extended.md) | Pokročilé riešenie problémov |
-| [E: Commands & CLI Reference](appendices/e-commands-reference.md) | Kompletná CLI referencia |
-| [F: Settings Configuration](appendices/f-settings-config.md) | Všetky nastavenia a konfigurácia |
+| Príloha | Popis | Odkaz z |
+|---------|-------|---------|
+| [A: CLAUDE.md Templates](appendices/a-claude-md-templates.md) | Šablóny pre projekty | Foundation 02 |
+| [B: Skill Templates](appendices/b-skill-templates.md) | Rozšírená knižnica skills | Core 09 |
+| [C: UIGen Reference](appendices/c-uigen-reference.md) | Kompletná referencia projektu | - |
+| [D: Extended Troubleshooting](appendices/d-troubleshooting-extended.md) | Pokročilé riešenie problémov | - |
+| [E: Commands & CLI Reference](appendices/e-commands-reference.md) | Kompletná CLI referencia | Foundation 03 |
+| [F: Settings Configuration](appendices/f-settings-config.md) | Všetky nastavenia a konfigurácia | - |
 
 ---
 
@@ -122,13 +122,13 @@ Aká je tvoja skúsenosť s Claude Code?
 │   └── Preskoč na Tier 2: Core (Modul 06)
 │
 ├── Skúsený vývojár, chcem best practices
-│   └── Preskoč na Tier 3: Intermediate (Modul 16)
+│   └── Preskoč na Tier 3: Intermediate (Modul 19)
 │
 ├── Power user, chcem pokročilé featury
-│   └── Preskoč na Tier 4: Advanced (Modul 24)
+│   └── Preskoč na Tier 4: Advanced (Modul 26)
 │
 └── Architekt / Tech lead
-    └── Preskoč na Tier 5: Mastery (Modul 34)
+    └── Preskoč na Tier 5: Mastery (Modul 36)
 ```
 
 ---
@@ -168,14 +168,16 @@ claude --resume     # Pokračuj v session
 | CLI Commands | Slash commands, flags | 03 |
 | Skills | Modulárne znalostné balíčky | 04, 06-10 |
 | Priorita | Enterprise > Personal > Project > Plugins | 07 |
-| Agents | Explorer, Plan, Verify | 11 |
+| Built-in Agents | Explorer, Plan, Verify | 11 |
 | Subagents | Delegovanie úloh | 12 |
-| Allowed Tools | Bezpečnostná konfigurácia | 13 |
-| Plan Mode | Plánovanie komplexných zmien | 30 |
-| Tool Use | Read, Write, Edit, Bash, Task | 13 |
-| Hooks | Event-driven automatizácia | 29 |
-| Sessions | Auto-save, export, resume | 22 |
-| MCP | Model Context Protocol | 28 |
+| Model Selection | Haiku vs Sonnet vs Opus | 13 |
+| Multi-Agent | Koordinácia agentov | 14 |
+| Debugging Agents | Diagnostika problémov | 15 |
+| Allowed Tools | Bezpečnostná konfigurácia | 16 |
+| Plan Mode | Plánovanie komplexných zmien | 32 |
+| Hooks | Event-driven automatizácia | 31 |
+| Sessions | Auto-save, export, resume | 24 |
+| MCP | Model Context Protocol | 30 |
 
 ---
 
@@ -184,34 +186,52 @@ claude --resume     # Pokračuj v session
 Pre úplné pochopenie Skills & Agents systému:
 
 ```
-01-struktura-skillov.md    → Základná štruktúra SKILL.md
-         │
-         ▼
-02-priorita.md             → Hierarchia a distribúcia
-         │
-         ▼
-03-skills-team-firma.md    → Enterprise a pluginy
-         │
-         ▼
-05-skill-templates.md      → Hotové šablóny na použitie
-         │
-         ▼
-06-best-practices.md       → Overené vzory
-         │
-         ▼
-07-built-in-agents.md      → Explorer, Plan, Verify
-         │
-         ▼
-08-subagents-context.md    → Task tool, delegovanie
-         │
-         ▼
-09-allowed-tools.md        → Bezpečnostná konfigurácia
-         │
-         ▼
-10-troubleshooting.md      → Riešenie problémov
-         │
-         ▼
-11-performance.md          → Optimalizácia nákladov
+SKILLS
+┌─────────────────────────────────────┐
+│ 01-struktura-skillov.md             │ → Základná štruktúra SKILL.md
+│         │                           │
+│         ▼                           │
+│ 02-priorita.md                      │ → Hierarchia a distribúcia
+│         │                           │
+│         ▼                           │
+│ 03-skills-team-firma.md             │ → Enterprise a pluginy
+│         │                           │
+│         ▼                           │
+│ 05-skill-templates.md               │ → Hotové šablóny
+│         │                           │
+│         ▼                           │
+│ 06-best-practices.md                │ → Overené vzory
+└─────────────────────────────────────┘
+                │
+                ▼
+AGENTS
+┌─────────────────────────────────────┐
+│ 07-built-in-agents.md               │ → Explorer, Plan, Verify
+│         │                           │
+│         ▼                           │
+│ 08-subagents-context.md             │ → Task tool, delegovanie
+│         │                           │
+│         ▼                           │
+│ 12-model-selection.md               │ → Výber správneho modelu
+│         │                           │
+│         ▼                           │
+│ 13-multi-agent.md                   │ → Orchestrácia agentov
+│         │                           │
+│         ▼                           │
+│ 14-debugging.md                     │ → Diagnostika problémov
+└─────────────────────────────────────┘
+                │
+                ▼
+KONFIGURÁCIA
+┌─────────────────────────────────────┐
+│ 09-allowed-tools.md                 │ → Bezpečnostná konfigurácia
+│         │                           │
+│         ▼                           │
+│ 10-troubleshooting.md               │ → Riešenie problémov
+│         │                           │
+│         ▼                           │
+│ 11-performance.md                   │ → Optimalizácia nákladov
+└─────────────────────────────────────┘
 ```
 
 ---
@@ -233,7 +253,7 @@ FOUNDATION:   button.tsx, MessageInput.tsx
               Jednoduché komponenty (~110 riadkov)
 
 CORE:         skills/, contexts/, auth.ts
-              Skills, state management (~500 riadkov)
+              Skills, Agents, state management (~800 riadkov)
 
 INTERMEDIATE: testy, hooks
               Testing patterns (~500 riadkov)

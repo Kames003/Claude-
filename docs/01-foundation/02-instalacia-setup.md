@@ -145,6 +145,8 @@ claude /init
 
 ### Kompletná šablóna
 
+Pre viac šablón pozrite **[Appendix A: CLAUDE.md Templates](../appendices/a-claude-md-templates.md)**.
+
 ```markdown
 # CLAUDE.md
 

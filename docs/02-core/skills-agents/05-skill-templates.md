@@ -322,6 +322,14 @@ Skill by sa mal aktivovať
 
 ---
 
+## Rozšírená knižnica šablón
+
+Pre ďalšie skill šablóny a pokročilé príklady pozrite:
+
+**[Appendix B: Skill Templates](../../appendices/b-skill-templates.md)** - Kompletná knižnica skill šablón pre rôzne use cases
+
+---
+
 ## Ďalej
 
 [Best Practices](06-best-practices.md) - Overené vzory a zlaté pravidlá
