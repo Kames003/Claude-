@@ -202,4 +202,4 @@ Zabaľte vaše skills do pluginu s plugin.json.
 
 ## Ďalej
 
-[Built-in Agents](08-built-in-agents.md) - Explorer, Plan, Verify agenti
+[Skill Templates](05-skill-templates.md) - Hotové skills na použitie

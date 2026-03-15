@@ -353,4 +353,4 @@ Vytvor health check endpoint pre monitoring agenta.
 
 ## Ďalej
 
-[Enterprise Deployment](22-enterprise.md)
+Po dokončení Core sekcie pokračujte na [Intermediate](../../03-intermediate/) pre real-world development patterns.

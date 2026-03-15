@@ -352,6 +352,6 @@ v UIGen projekte.
 
 ---
 
-## Dalej
+## Ďalej
 
-[Priorita a Distribucia](05-priorita.md) - Ako sa Skills aplikuju a zdielaju
+[Priorita a Distribúcia](02-priorita.md) - Ako sa Skills aplikujú a zdieľajú

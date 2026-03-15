@@ -308,6 +308,6 @@ na kompletnú kontrolu.
 
 ---
 
-## Dalej
+## Ďalej
 
-[Git Integration](09-git-integration.md) - Git workflow s Claude Code
+[Subagents a Kontext](08-subagents-context.md) - Delegovanie úloh a formatted fields

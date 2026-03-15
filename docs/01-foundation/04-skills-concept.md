@@ -47,6 +47,6 @@ Ak skill presahuje 500 riadkov:
 
 ---
 
-## Dalej
+## Ďalej
 
-[Prva Session](03-prva-session.md) - Hands-on praca s realnym kodom
+[Prvá Session](05-prva-session.md) - Hands-on práca s reálnym kódom

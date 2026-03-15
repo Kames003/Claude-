@@ -37,6 +37,6 @@ claude --cwd /path/to/project
 
 ---
 
-## Dalej
+## Ďalej
 
-[Skills - Core Concept](02-skills-concept.md) - Pochopenie zakladnych konceptov
+[Inštalácia a Setup](02-instalacia-setup.md) - API kľúče, konfigurácia a CLAUDE.md

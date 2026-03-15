@@ -279,4 +279,4 @@ Implementuj agenta ktorý iteratívne vylepšuje kód na základe feedbacku.
 
 ## Ďalej
 
-[Performance Optimization](19-performance.md)
+[Debugging Agents](14-debugging.md) - Diagnostika a riešenie problémov

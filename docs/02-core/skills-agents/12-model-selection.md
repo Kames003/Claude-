@@ -237,6 +237,6 @@ Pridaj budget limiting - zastav keď sa dosiahne limit.
 
 ---
 
-## Dalej
+## Ďalej
 
-[Memory & Persistence](13-memory-persistence.md) - CLAUDE.md, sessions, dlhodoba pamat
+[Multi-Agent Orchestration](13-multi-agent.md) - Koordinácia viacerých agentov

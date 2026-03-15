@@ -401,6 +401,6 @@ pre existujuci skill.
 
 ---
 
-## Dalej
+## Ďalej
 
-[Tool Use](06-tool-use.md) - Ako Claude pracuje s nastrojmi
+[Skills v Tíme a Firme](03-skills-team-firma.md) - Enterprise skills a pluginy

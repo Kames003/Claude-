@@ -193,6 +193,6 @@ Analyzuj MessageInput.tsx a navrhni vylepšenia pre lepšiu čitateľnosť.
 
 ---
 
-## Dalej
+## Ďalej
 
-[Plan Mode](04-plan-mode.md) - Planovanie komplexnych zmien
+Po dokončení Foundation pokračujte na [Core: Skills & Agents](../02-core/skills-agents/01-struktura-skillov.md)

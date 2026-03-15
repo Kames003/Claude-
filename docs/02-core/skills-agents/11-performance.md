@@ -275,24 +275,7 @@ identifikujte optimalizačné príležitosti.
 
 ---
 
-## Zhrnutie Core Skills & Agents
+## Ďalej
 
-Gratulujeme! Dokončili ste Core modul o Skills a Agents.
-
-### Čo ste sa naučili
-
-1. **Skills** - kontextové znalostné moduly
-2. **Priorita** - Enterprise > Personal > Project > Plugins
-3. **Team/Firma** - zdieľanie v organizácii
-4. **Templates** - hotové skills na použitie
-5. **Best Practices** - overené vzory
-6. **Built-in Agents** - Explorer, Plan, Verify
-7. **Subagents** - delegovanie úloh
-8. **Allowed Tools** - bezpečnostná konfigurácia
-9. **Troubleshooting** - riešenie problémov
-10. **Performance** - optimalizácia nákladov
-
-### Ďalšie kroky
-
-Pokračujte do [Intermediate](../03-intermediate/) pre pokročilejšie témy.
+[Model Selection](12-model-selection.md) - Výber správneho modelu (Haiku vs Sonnet vs Opus)
 

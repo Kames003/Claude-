@@ -304,4 +304,4 @@ Vytvor webhook endpoint pre notifikácie pri zmene projektu.
 
 ## Ďalej
 
-[Model Selection](12-model-selection.md)
+[Memory & Persistence](13-memory-persistence.md) - CLAUDE.md, sessions, hooks

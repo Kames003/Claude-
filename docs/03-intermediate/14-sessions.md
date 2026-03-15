@@ -307,4 +307,4 @@ sessions starších ako 7 dní.
 
 ## Ďalej
 
-[Model Selection](12-model-selection.md) - Sonnet vs Opus, optimalizácia
+Po dokončení Intermediate pokračujte na [Advanced](../04-advanced/13-ai-tools.md) - AI Tool Implementation

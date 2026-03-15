@@ -307,4 +307,4 @@ základe analýzy.
 
 ## Ďalej
 
-[Git Integration](09-git-integration.md) - Git workflow s Claude Code
+[Allowed Tools](09-allowed-tools.md) - Bezpečnostná konfigurácia nástrojov
